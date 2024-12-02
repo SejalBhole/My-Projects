@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+    <div id="Calculator"> 
+        <input type="text" id="display">
+    <div id="button-container">
+        <button class="button" onclick="currval=' '; 
+        document.querySelector('#display').value=currval;">C</button>
+
+        <button class="button" onclick="currval=currval+'0' 
+        document.querySelector('#display').value=currval;">0</button> 
+        <button class="button" onclick="currval=currval+'1'
+        document.querySelector('#display').value=currval;">1</button>
+
+        <button class="button" onclick="currval=currval+'2' 
+        document.querySelector('#display').value=currval;">2</button> 
+
+        <button class="button" onclick="currval=currval+'3' 
+        document.querySelector('#display').value=currval;">3</button> 
+
+        <button class="button" onclick="currval=currval+'4' 
+        document.querySelector('#display').value=currval;">4</button>
+
+        <button class="button" onclick="currval=currval+'5' 
+        document.querySelector('#display').value=currval;">5</button>
+        <button class="button" onclick="currval=currval+'6' 
+        document.querySelector('#display').value=currval;">6</button> 
+        <button class="button" onclick="currval=currval+'7' 
+        document.querySelector('#display').value=currval;">7</button> 
+        <button class="button" onclick="currval=currval+'8' 
+        document.querySelector('#display').value=currval;">8</button>
+        <button class="button" onclick="currval=currval+'9' 
+        document.querySelector('#display').value=currval;">9</button> 
+        <button class="button" onclick="currval=currval+'+' 
+        document.querySelector('#display').value=currval;">+</button>
+        <button class="button" onclick="currval=currval+'-' 
+        document.querySelector('#display').value=currval;">-</button>
+        <button class="button" onclick="currval=currval+'*' 
+        document.querySelector('#display').value=currval;">*</button> 
+        <button class="button" onclick="currval=currval+'/' 
+        document.querySelector('#display').value=currval;">/</button>
+        <button class="button"
+         onclick="currval=eval(currval)
+         document.querySelector('#display').value=currval;">=</button>
+    </div>
+    </div>
+    
+    <script>
+        let currval=" ";
+        document.querySelector('#display').value=currval;
+          </script>
+</body>
+</html>
